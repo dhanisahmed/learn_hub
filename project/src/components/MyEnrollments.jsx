@@ -12,7 +12,7 @@ function MyEnrollments() {
       if (!studentId) return alert("Please sign in first!");
 
       try {
-        const res = await axios.get('http://localhost:3000/courses'); // fetching all courses
+        const res = await axios.get('https://learn-hub-backend-2bhg.onrender.com/courses'); // fetching all courses
         const enrolled = res.data.filter(course => course.enrolledStudents.includes(studentId));
         setEnrolledCourses(enrolled);
       } catch (err) {
