@@ -4,6 +4,10 @@ import cors from 'cors';
 import User from './models/User.js';
 import Course from './models/Course.js';
 import sendMail from './Mail.js';
+import dotenv from 'dotenv';
+
+dotenv.config();
+
 
 const app = express();
 app.use(cors());
